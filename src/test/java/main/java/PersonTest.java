@@ -6,15 +6,15 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
-    public Person test1;
+    public Person test2;
     @BeforeEach
     void setUp() {
-        test1= new Person("Susi", "Sorglos", 180, (byte)4);
+        test2= new Person("Susi", "Sorglos", 180, (byte)4);
     }
 
     @Test
     void rechneBMI() {
-        String susiBMI = test1.rechneBMI(80);
+        String susiBMI = test2.rechneBMI(80);
 
         assertEquals("Normalgewicht", susiBMI);
 
@@ -22,7 +22,7 @@ class PersonTest {
 
     @Test
     void printPerson() {
-        String susiAktivitaetslvl = test1.printPerson(80);
+        String susiAktivitaetslvl = test2.printPerson(80);
         assertEquals(susiAktivitaetslvl, "Profisportler" );
     }
 }
